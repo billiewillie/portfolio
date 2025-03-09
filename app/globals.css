@@ -1,24 +1,255 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
+    --text-primary: #f6f7ff;
+    --text-secondary: #a9a9bd;
+    --accent: #b5ff6d;
+    --white: #ffffff;
+    --black: #000000;
+    --bg-900: #0b0b0d;
+    --bg-600: #2c2c35;
+    --bg-700: #191920;
+    --bg-800: #111116;
+    --backdrop: rgba(11, 11, 13, .8);
+
+    --font-base: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.shimmer {
+    font-weight: 600;
+    display: inline-block;
+    background: currentColor -webkit-gradient(linear, 100% 0, 0 0, from(#fff), color-stop(.5, #fff), to(#fff));
+    background-position: -4rem top;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shimmer 2.2s infinite;
+    background-size: 4rem 100%;
+    -webkit-text-fill-color: transparent
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: var(--font-base), sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+@media (min-width: 640px) {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border: 2px solid var(--bg-900);
+    cursor: grab;
+    border-radius: .75rem;
+    background: var(--bg-600);
+    -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #45454f;
+}
+
+.no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+    display: none
+}
+
+.active-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: var(--text-primary);
+    transition: all .3s ease;
+}
+
+.logo_items {
+    display: flex;
+    gap: 1rem;
+    animation: 60s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+    animation-play-state: paused;
+}
+
+.revealFx {
+    mask-image: linear-gradient(to right, var(--bg-900) 0, var(--bg-900) 25%, transparent 50%);
+    -webkit-mask-size: 400% 100%;
+    mask-size: 400% 100%;
+    transition: all ease-in-out;
+    transition-duration: .5s;
+}
+
+.leaveFx {
+    mask-image: linear-gradient(to left, var(--bg-900) 0, var(--bg-900) 25%, transparent 50%);
+    -webkit-mask-size: 400% 100%;
+    mask-size: 400% 100%;
+    transition: all ease-in-out;
+    transition-duration: .7s;
+}
+
+@media (min-width: 640px) {
+    .revealFx,
+    .leaveFx {
+        transition-duration: .7s;
+    }
+}
+
+.hideRevealFx {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+    filter: blur(12px)
+}
+
+.hideLeaveFx {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+    filter: blur(0)
+}
+
+.revealedFx {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+    filter: blur(0)
+}
+
+.leavedFx {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+    filter: blur(12px)
+}
+
+.opacity-container-child {
+    transition: opacity .3s ease;
+    cursor: pointer
+}
+
+.wave {
+    animation: wave-animation 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+.rfm-overlay {
+    top: 0;
+}
+
+.szh-accordion__item-content {
+    transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.szh-accordion__item-btn {
+    width: 100%;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+.szh-accordion__item--expanded .arrow {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 640px) {
+    .opacity-container:has(.opacity-container-child:hover) .opacity-container-child:not(:hover) {
+        opacity: .5
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -4rem top
+    }
+
+    70% {
+        background-position: 12.5rem top
+    }
+
+    to {
+        background-position: 12.5rem top
+    }
+}
+
+@keyframes slides {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
