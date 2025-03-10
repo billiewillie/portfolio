@@ -1,4 +1,4 @@
-export default function revealSpans(spans: string | any[]) {
+export default function revealSpans(spans: string | never[]) {
 	for (let i = 0; i < spans.length; i++) {
 		if (spans[i].parentElement.getBoundingClientRect().top < window.innerHeight / 1.2) {
 			const { left } = spans[i].getBoundingClientRect()

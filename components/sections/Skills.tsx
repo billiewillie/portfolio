@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
-import { black } from 'next/dist/lib/picocolors'
 
 type Skill = {
 	name: string

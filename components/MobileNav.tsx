@@ -3,7 +3,6 @@
 import {Home, BriefcaseBusiness, Newspaper} from 'lucide-react'
 import {FC} from 'react'
 import {usePathname} from 'next/navigation'
-import Link from 'next/link'
 import TransitionLink from "@/components/ui/TransitionLink";
 
 type NavigationItem = {

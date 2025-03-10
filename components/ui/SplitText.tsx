@@ -61,7 +61,7 @@ const SplitText: React.FC<SplitTextProps> = (
         letters.length,
         letters.map((_, i) => ({
             from: animationFrom,
-            to: inView ? async (next: (props: any) => Promise<void>) => {
+            to: inView ? async (next: (props: unknown) => Promise<void>) => {
                     await next(animationTo)
                     animatedCount.current += 1
                     if (
