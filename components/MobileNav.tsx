@@ -4,9 +4,10 @@ import {Home, BriefcaseBusiness, Newspaper} from 'lucide-react'
 import {FC} from 'react'
 import {usePathname} from 'next/navigation'
 import TransitionLink from "@/components/ui/TransitionLink";
+import {IconProps} from "@/types";
 
 type NavigationItem = {
-    icon: FC
+    icon: FC<IconProps>
     link: string
     name: string
 }

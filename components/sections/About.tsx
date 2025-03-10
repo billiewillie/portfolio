@@ -13,7 +13,7 @@ export default function Experience() {
 
 
 	useEffect(() => {
-        const spans = [...document.querySelectorAll('.reveal-letter')]
+        const spans = [...document.querySelectorAll('.reveal-letter')] as HTMLSpanElement[]
 		AOS.init()
 		window.addEventListener('scroll', () => {
 			revealSpans(spans)

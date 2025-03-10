@@ -7,11 +7,12 @@ import 'aos/dist/aos.css'
 import AccentTitle from '@/components/ui/AccentTitle'
 import SplitText from '@/components/ui/SplitText'
 import {motion, useScroll} from 'motion/react'
+import {IconProps} from "@/types";
 
 type ProcessItem = {
     title: string
     text: string
-    icon: FC
+    icon: FC<IconProps>
 }
 
 const processItems: ProcessItem[] = [
