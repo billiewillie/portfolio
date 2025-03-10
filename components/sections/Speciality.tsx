@@ -11,7 +11,7 @@ import SplitText from '@/components/ui/SplitText'
 
 type Speciality = {
     id: number
-    icon: FC
+    icon: FC<{width: number, height: number}>
     name: string
     description: string
     image: string
