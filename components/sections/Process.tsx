@@ -45,7 +45,7 @@ const processItems: ProcessItem[] = [
 
 export default function Process() {
     const [progress, setProgress] = useState(0)
-    const ref = useRef(null)
+    const ref = useRef<HTMLDivElement>(null)
     const {scrollYProgress} = useScroll({
         target: ref,
         offset: ['130% end', 'start 30%']
@@ -53,7 +53,9 @@ export default function Process() {
     const [elShift, setElShift] = useState(0)
 
     useEffect(() => {
-        setElShift(ref.current?.getBoundingClientRect().width - ref.current?.parentElement.getBoundingClientRect().width)
+        if (ref.current && ref.current.parentElement) {
+            setElShift(ref.current.getBoundingClientRect().width - ref.current.parentElement.getBoundingClientRect().width)
+        }
         document.addEventListener('scroll', () => {
             setProgress(scrollYProgress.get())
         })
