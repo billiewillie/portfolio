@@ -89,7 +89,7 @@ export default function Experience() {
                                             </div>
                                         </div>
                                     }>
-                                    <ul className={'pl-4 list-disc pt-4'}>
+                                    <ul className={'pl-4 list-disc pt-4 flex flex-col gap-y-2'}>
                                         {
                                             company.description.map((item: string, index) => (
 

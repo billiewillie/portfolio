@@ -6,41 +6,45 @@ export default function Footer() {
         <footer className={'flex flex-col gap-y-8 pb-8'}>
             <div>
                 <div className="container">
-                    <div className="flex items-center flex-col rounded-3xl bg-black-800 py-12 gap-y-8 shadow">
-                        <div
-                            data-aos="fade"
-                            data-aos-offset="0"
-                            data-aos-duration="300"
-                            data-aos-easing="ease"
-                            data-aos-delay="0"
-                            data-aos-once="false"
-                            className={'flex justify-center'}>
+                    <div className="flex flex-col md:flex-row rounded-3xl bg-black-800 p-8 xl:p-12 gap-16 shadow">
+                        <div className='flex md:basis-1/2 flex-col items-start gap-8'>
                             <div
-                                className="flex items-center leading-none gap-2 rounded-full bg-[#B5FF6D]/10 px-4 py-2">
-                                <div className="relative flex h-[6px] w-[6px]">
+                                data-aos="fade"
+                                data-aos-offset="0"
+                                data-aos-duration="300"
+                                data-aos-easing="ease"
+                                data-aos-delay="0"
+                                data-aos-once="false"
+                                className={'flex justify-center'}>
+                                <div
+                                    className="flex items-center leading-none gap-2 rounded-full bg-[#B5FF6D]/10 px-4 py-2">
+                                    <div className="relative flex h-[6px] w-[6px]">
 									<span
                                         className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>
-                                    <span className="relative inline-flex h-full w-full rounded-full bg-accent"></span>
+                                        <span
+                                            className="relative inline-flex h-full w-full rounded-full bg-accent"></span>
+                                    </div>
+                                    <p className="text-xs text-primary">
+                                        Открыт для сотрудничества
+                                    </p>
                                 </div>
-                                <p className="text-xs text-primary">
-                                    Открыт для сотрудничества
-                                </p>
+                            </div>
+                            <div
+                                data-aos="fade"
+                                data-aos-offset="0"
+                                data-aos-duration="300"
+                                data-aos-easing="ease"
+                                data-aos-delay="200"
+                                data-aos-once="false">
+                                <h2
+                                    role="heading"
+                                    className="text-balance text-3xl max-w-screen-sm font-semibold">
+                                    Давайте воплотим вашу следующую большую идею
+                                </h2>
                             </div>
                         </div>
                         <div
-                            data-aos="fade"
-                            data-aos-offset="0"
-                            data-aos-duration="300"
-                            data-aos-easing="ease"
-                            data-aos-delay="200"
-                            data-aos-once="false">
-                            <h2
-                                role="heading"
-                                className="text-balance text-center text-3xl max-w-screen-sm font-semibold sm:text-4xl">
-                                Давайте воплотим вашу следующую большую идею
-                            </h2>
-                        </div>
-                        <div
+                            className='md:basis-1/2 flex flex-col items-start gap-4'
                             data-aos="fade"
                             data-aos-offset="0"
                             data-aos-duration="300"
@@ -48,9 +52,14 @@ export default function Footer() {
                             data-aos-delay="400"
                             data-aos-once="false">
                             <Link
-                                className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-background hover:bg-primary/90 px-4 py-2"
-                                href="/">
-                                Связаться со мной
+                                className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold ring-offset-background transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-background hover:opacity-90 px-4 py-2"
+                                href="mailto:vadimbelinovich@gmail.com">
+                                Написать на почту
+                            </Link>
+                            <Link
+                                className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-background hover:opacity-90 px-4 py-2 transition-opacity"
+                                href="tg://resolve?domain=billie_willie">
+                                Написать в телеграм
                             </Link>
                         </div>
                     </div>

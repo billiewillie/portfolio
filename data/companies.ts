@@ -17,9 +17,9 @@ export const companies: Company[] = [
         image: '/experience/bioline.svg',
         dates: 'март 2023 - февраль 2025',
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'На предыдущем месте работы в роли веб-разработчика я был ответственным за создание и поддержку высоконагруженных веб-приложений, ориентированных на удобство пользователей и производительность.',
+            'Я был вовлечён в процесс создания корпоративного портала, сочетая в себе навыки веб-дизайнера и веб-разработчика. Этот проект стал значимой частью моего профессионального развития, позволив мне проявить креативность, техническое мастерство и умение эффективно взаимодействовать с командой.',
+            'В роли веб-дизайнера я занимался созданием визуально привлекательных и функциональных интерфейсов для различных цифровых продуктов. Моя задача состояла в том, чтобы превратить идеи команды в гармоничные, эстетически приятные и удобные для пользователей решения.'
         ]
     },
     {
@@ -30,9 +30,10 @@ export const companies: Company[] = [
         image: '/experience/studia-54.svg',
         dates: 'март 2022 - февраль 2023',
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        ]	},
+            'На мне лежала задача поддержания и развития интернет-магазина, играя ключевую роль в обеспечении его бесперебойной работы и удовлетворенности клиентов. Моей основной задачей было следить за технической стороной платформы, устранять возникающие проблемы и внедрять улучшения, направленные на повышение производительности и удобства использования.',
+            'Вторая задача - создавать эффективные и визуально привлекательные лендинги. Код писал вручную, чтобы достичь максимальной гибкости и контроля над результатом. Стремился к чистоте и легкости кода, чтобы обеспечить быструю загрузку страницы.'
+        ]
+    },
     {
         name: 'Uno agency',
         bgColor: 'bg-black',
@@ -41,10 +42,11 @@ export const companies: Company[] = [
         image: '/experience/uno.svg',
         dates: 'июнь 2018 - февраль 2020',
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        ]	},
+            'Я был погружен в интересный и ответственный процесс создания специализированных медицинских сайтов, посвящённых различным препаратам. Эта работа требовала не только глубоких технических знаний, но и понимания специфики медицинской тематики',
+            'Здесь стояла задача сделать сайт удобным и доступным для широкой аудитории. Я создавал адаптивные интерфейсы, которые работали безупречно на любом устройстве — от смартфона до большого экрана компьютера. Особое внимание уделял юзабилити, чтобы даже пользователи без технического образования могли легко находить нужную информацию.',
+            'Чтобы информация о препаратах была доступна максимальному количеству людей, я занимался SEO-оптимизацией сайтов. Это включало правильную разметку страниц, настройку метатегов, а также интеграцию с инструментами аналитики для дальнейшего анализа трафика и поведения пользователей.'
+        ]
+    },
     {
         name: 'Adcombo',
         bgColor: 'bg-white',
@@ -53,9 +55,7 @@ export const companies: Company[] = [
         image: '/experience/adcombo.svg',
         dates: 'октябрь 2016 - апрель 2018',
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Я специализировался на создании высокоэффективных лендингов для компании, занимающейся привлечением трафика на разнообразные товары. Каждый лендинг был разработан с целью максимального вовлечения потенциальных клиентов и стимуляции их к покупке.',
         ]	},
     {
         name: 'Jumeirah',
@@ -65,9 +65,7 @@ export const companies: Company[] = [
         image: '/experience/jumeirah.svg',
         dates: 'август 2012 - июль 2014',
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Я имел честь участвовать в создании сайта для одного из крупнейших и известнейших отелей Дубаи. Этот проект потребовал особого внимания к каждой детали, поскольку речь шла о престижном бренде с высокими стандартами качества обслуживания.'
         ]
     },
 ];
