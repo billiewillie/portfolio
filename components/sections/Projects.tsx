@@ -38,8 +38,7 @@ export default function Projects() {
                                         data-aos-delay="0">
                                         <div
                                             className={`aspect-3/2 w-full object-center overflow-hidden rounded-3xl`}
-                                            style={{backgroundColor: project.bgColor}}
-                                        >
+                                            style={{backgroundColor: project.bgColor}}>
                                             <Image
                                                 className={'transition duration-300 group-hover:scale-[1.015]'}
                                                 alt={project.name}
@@ -83,6 +82,7 @@ export default function Projects() {
                     <TransitionLink
                         href="/portfolio"
                         className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold ring-offset-background transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:opacity-90 text-black px-8 py-3">
+
                         Все работы
                     </TransitionLink>
                 </div>

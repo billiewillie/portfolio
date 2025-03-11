@@ -24,7 +24,7 @@ export default function TransitionLink({href, children, className}: Props) {
     return (
         <div
             onClick={handleClick}
-            className={`${className}, cursor-pointer`}>
+            className={`${className} cursor-pointer`}>
             {children}
         </div>
     )
