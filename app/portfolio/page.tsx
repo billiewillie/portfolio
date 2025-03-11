@@ -1,39 +1,60 @@
-import {projects} from "@/data/portfolio";
+import {portfolio, Project} from "@/data/portfolio";
 import Image from "next/image";
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 export default function PortfolioPage() {
 
     return (
         <>
             <div className="container">
-                <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
-                    {projects.map((p, idx) => (
-                        <Link
-                            key={idx}
-                            href={`/blog/${p.slug}`}
-                            className="p-4 group rounded-lg border w-[392px] border-gray-200 dark:border-gray-700">
-                            {/* image */}
+                <div
+                    className={'mb-12 opacity-container grid grid-cols-1 grid-rows-[masonry] gap-y-10 py-md sm:grid-cols-2 sm:gap-x-16 sm:gap-y-0'}>
+                    {
+                        portfolio.map((project: Project) => (
                             <div
-                                className="h-60 w-full relative overflow-hidden rounded-md object-cover group-hover:scale-105 duration-300 transition-all">
-                                <Image
-                                    src={p.thumbnail}
-                                    alt={`${p.title} - thumbnail`}
-                                    sizes="100vh"
-                                    fill/>
+                                className={'opacity-container-child group h-fit w-full cursor-pointer even:sm:mt-14'}
+                                key={project.name}>
+                                <TransitionLink href={project.link}>
+                                    <div
+                                        data-aos="fade"
+                                        data-aos-offset="0"
+                                        data-aos-duration="300"
+                                        data-aos-easing="ease"
+                                        data-aos-delay="0">
+                                        <div
+                                            className={`aspect-3/2 w-full object-center overflow-hidden rounded-3xl ${project.bgColor}`}>
+                                            <Image
+                                                className={'transition duration-300 group-hover:scale-[1.015]'}
+                                                alt={project.name}
+                                                src={project.image}
+                                                width={0}
+                                                height={0}
+                                                sizes="100vw"
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    objectFit: `${project.bgCover ? 'cover' : 'contain'}`
+                                                }}/>
+                                        </div>
+                                    </div>
+                                    <div
+                                        data-aos="fade"
+                                        data-aos-offset="0"
+                                        data-aos-duration="300"
+                                        data-aos-easing="ease"
+                                        data-aos-delay="200">
+                                        <div className="mt-4 space-y-2">
+                                            <h5>{project.name}</h5>
+                                            <div className="flex justify-between">
+                                                <div className="flex flex-wrap gap-2">
+                                                    <p className="text-sm text-secondary">{project.typeOfWork}</p></div>
+                                                <p className="text-sm text-secondary">{project.year}</p></div>
+                                        </div>
+                                    </div>
+                                </TransitionLink>
                             </div>
-
-                            {/* title */}
-                            <h2 className="text-2xl leading-7 font-bold py-1 line-clamp-2">
-                                {p.title}
-                            </h2>
-
-                            {/* author and date */}
-                            <div className="text-gray-500 flex text-base space-x-10 py-3">
-                                <div>{p.date}</div>
-                            </div>
-                        </Link>
-                    ))}
+                        ))
+                    }
                 </div>
             </div>
         </>

@@ -1,54 +1,8 @@
 import AccentTitle from '@/components/ui/AccentTitle'
-import Link from 'next/link'
 import Image from 'next/image'
 import SplitText from '@/components/ui/SplitText'
-
-type Project = {
-    name: string
-    image: string
-    link: string
-    bgColor: string
-    bgCover?: boolean
-    year: number,
-    typeOfWork: string
-}
-
-const projects: Project[] = [
-    {
-        name: 'Кировский завод',
-        image: '/projects/kirovski-zavod.jpg',
-        link: '/projects/1',
-        bgColor: 'bg-[#122858]',
-        year: 2021,
-        typeOfWork: 'Разработка сайта'
-    },
-    {
-        name: 'York Fresh',
-        image: '/projects/york-fresh.jpg',
-        link: '/projects/2',
-        bgColor: 'bg-[#ffffff]',
-        year: 2020,
-        typeOfWork: 'Разработка и дизайн'
-    },
-    {
-        name: 'Jumeirah',
-        image: '/projects/jumeirah.jpg',
-        link: '/projects/3',
-        bgColor: 'bg-[#fff]',
-        bgCover: true,
-        year: 2018,
-        typeOfWork: 'Разработка сайта'
-    },
-    {
-        name: 'Labvision',
-        image: '/projects/labvision.jpg',
-        link: '/projects/4',
-        bgColor: 'bg-[#000000]',
-        bgCover: false,
-        year: 2024,
-        typeOfWork: 'Разработка сайта и дизайн'
-    }
-]
+import {portfolio, Project} from "@/data/portfolio";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 export default function Projects() {
     return (
@@ -71,11 +25,11 @@ export default function Projects() {
                 <div
                     className={'mb-12 opacity-container grid grid-cols-1 grid-rows-[masonry] gap-y-10 py-md sm:grid-cols-2 sm:gap-x-16 sm:gap-y-0'}>
                     {
-                        projects.map((project: Project) => (
+                        portfolio.map((project: Project) => (
                             <div
                                 className={'opacity-container-child group h-fit w-full cursor-pointer even:sm:mt-14'}
                                 key={project.name}>
-                                <Link href={project.link}>
+                                <TransitionLink href={project.link}>
                                     <div
                                         data-aos="fade"
                                         data-aos-offset="0"
@@ -112,7 +66,7 @@ export default function Projects() {
                                                 <p className="text-sm text-secondary">{project.year}</p></div>
                                         </div>
                                     </div>
-                                </Link>
+                                </TransitionLink>
                             </div>
                         ))
                     }
@@ -124,11 +78,11 @@ export default function Projects() {
                     data-aos-duration="300"
                     data-aos-easing="ease"
                     data-aos-delay="0">
-                    <Link
+                    <TransitionLink
                         href="/portfolio"
                         className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold ring-offset-background transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:opacity-90 text-black px-8 py-3">
                         Все работы
-                    </Link>
+                    </TransitionLink>
                 </div>
             </div>
         </section>

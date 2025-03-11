@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <header
-            className={`flex sticky transition-all duration-1000 top-0 left-0 right-0 z-50 w-full px-0 pt-4 mb-8 ${isLoaded ? 'translate-y-0' : '-translate-y-16'}`}>
+            className={`flex sticky transition-all duration-1000 top-0 left-0 right-0 z-50 w-full px-0 pt-4 mb-12 ${isLoaded ? 'translate-y-0' : '-translate-y-16'}`}>
             <div className="container relative flex justify-center h-[28px]">
                 <motion.nav
                     ref={ref}
