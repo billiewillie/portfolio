@@ -22,7 +22,8 @@ export default function PortfolioPage() {
                                         data-aos-easing="ease"
                                         data-aos-delay="0">
                                         <div
-                                            className={`aspect-3/2 w-full object-center overflow-hidden rounded-3xl ${project.bgColor}`}>
+                                            style={{backgroundColor: project.bgColor}}
+                                            className={`aspect-3/2 w-full object-center overflow-hidden rounded-3xl`}>
                                             <Image
                                                 className={'transition duration-300 group-hover:scale-[1.015]'}
                                                 alt={project.name}

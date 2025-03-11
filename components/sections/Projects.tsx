@@ -37,7 +37,9 @@ export default function Projects() {
                                         data-aos-easing="ease"
                                         data-aos-delay="0">
                                         <div
-                                            className={`aspect-3/2 w-full object-center overflow-hidden rounded-3xl ${project.bgColor}`}>
+                                            className={`aspect-3/2 w-full object-center overflow-hidden rounded-3xl`}
+                                            style={{backgroundColor: project.bgColor}}
+                                        >
                                             <Image
                                                 className={'transition duration-300 group-hover:scale-[1.015]'}
                                                 alt={project.name}

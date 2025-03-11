@@ -15,6 +15,6 @@ export function animationPageOut(href: string, router: AppRouterInstance) {
         mainInner.classList.add('leavedFx');
         setTimeout(() => {
             router.push(href)
-        }, 400)
+        }, 500)
     }
 }
