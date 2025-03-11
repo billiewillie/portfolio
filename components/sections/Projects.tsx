@@ -125,7 +125,7 @@ export default function Projects() {
                     data-aos-easing="ease"
                     data-aos-delay="0">
                     <Link
-                        href="/projects"
+                        href="/portfolio"
                         className="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold ring-offset-background transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:opacity-90 text-black px-8 py-3">
                         Все работы
                     </Link>
