@@ -6,6 +6,7 @@ export type Project = {
     bgCover?: boolean
     year: number,
     typeOfWork: string
+    slug: string
 }
 
 export const portfolio: Project[] = [
@@ -15,7 +16,8 @@ export const portfolio: Project[] = [
         link: '/portfolio/kirovski-zavod',
         bgColor: '#122858',
         year: 2021,
-        typeOfWork: 'Разработка сайта'
+        typeOfWork: 'Разработка сайта',
+        slug: 'kirovski-zavod'
     },
     {
         name: 'York Fresh',
@@ -23,6 +25,7 @@ export const portfolio: Project[] = [
         link: '/portfolio/york-fresh',
         bgColor: '#ffffff',
         year: 2020,
+        slug: 'york-fresh',
         typeOfWork: 'Разработка и дизайн'
     },
     {
@@ -32,6 +35,7 @@ export const portfolio: Project[] = [
         bgColor: '#fff',
         bgCover: true,
         year: 2018,
+        slug: 'jumeirah',
         typeOfWork: 'Разработка сайта'
     },
     {
@@ -41,6 +45,7 @@ export const portfolio: Project[] = [
         bgColor: '#000000',
         bgCover: false,
         year: 2024,
+        slug: 'labvision',
         typeOfWork: 'Разработка сайта и дизайн'
     }
 ];

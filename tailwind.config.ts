@@ -44,6 +44,26 @@ export default {
                     DEFAULT: 'var(--backdrop)',
                 }
             },
+            typography: {
+                DEFAULT: {
+                    css: {
+                        color: 'var(--text-primary)',
+                        a: {
+                            color: 'var(--text-primary)',
+                            '&:hover': {
+                                color: 'var(--text-secondary)'
+                            }
+                        },
+                        'h1, h2, h3, h4, h5, h6': {
+                            color: 'var(--text-primary)'
+                        },
+                        'p, li': {
+                            color: 'var(--text-secondary)'
+                        }
+                    },
+
+                }
+            },
             container: {
                 center: true,
                 padding: {
@@ -63,6 +83,7 @@ export default {
         }
     },
     plugins: [
-        fluid
+        require('@tailwindcss/typography'),
+        fluid,
     ]
 } satisfies Config

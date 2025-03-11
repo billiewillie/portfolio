@@ -7,7 +7,7 @@ export default function MdxLayout({children}: { children: ReactNode }) {
     return (
         <div className='mb-12'>
             <div className="container">
-                <div className="max-w-4xl m-auto prose dark:prose-invert">
+                <div className="max-w-4xl m-auto prose">
                     <Thumbnail/>
                     <SyntaxHighlighter>{children}</SyntaxHighlighter>
                 </div>
