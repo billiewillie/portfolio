@@ -25,7 +25,7 @@ export default function Projects() {
                 <div
                     className={'mb-12 opacity-container grid grid-cols-1 grid-rows-[masonry] gap-y-10 py-md sm:grid-cols-2 sm:gap-x-16 sm:gap-y-0'}>
                     {
-                        portfolio.map((project: Project) => (
+                        portfolio.slice(0, 4).map((project: Project) => (
                             <div
                                 className={'opacity-container-child group h-fit w-full cursor-pointer even:sm:mt-14'}
                                 key={project.name}>

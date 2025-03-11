@@ -2,7 +2,9 @@ import {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-
 
 export function animationPage() {
     const main = document.getElementById('main');
-    if (main) {
+    const mainInner = document.getElementById('mainInner');
+    if (main && mainInner) {
+        mainInner.classList.remove('leavedFx');
         main.classList.add('revealedFx');
     }
 }

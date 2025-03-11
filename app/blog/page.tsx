@@ -1,6 +1,6 @@
 import {posts} from "@/data/posts";
 import Image from "next/image";
-import Link from "next/link";
+import TransitionLink from "@/components/ui/TransitionLink";
 
 export default function BlogPage() {
     return (
@@ -8,7 +8,7 @@ export default function BlogPage() {
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
                     {posts.map((p, idx) => (
-                        <Link
+                        <TransitionLink
                             key={idx}
                             href={`/blog/${p.slug}`}
                             className="p-4 group rounded-lg border w-[392px] border-gray-200 dark:border-gray-700">
@@ -36,7 +36,7 @@ export default function BlogPage() {
                             <div className="text-gray-500 flex text-base space-x-10 py-3">
                                 <div>{p.date}</div>
                             </div>
-                        </Link>
+                        </TransitionLink>
                     ))}
                 </div>
             </div>

@@ -2,6 +2,7 @@ import {Instagram, Github} from 'lucide-react'
 import Link from 'next/link'
 
 export default function Footer() {
+    const year = new Date().getFullYear()
     return (
         <footer className={'flex flex-col gap-y-8 pb-8'}>
             <div>
@@ -68,7 +69,7 @@ export default function Footer() {
             <div>
                 <div className="container flex justify-between">
                     <p className="text-center text-sm text-secondary sm:mb-0 sm:text-left">
-                        © 2025 Вадим Белинович
+                        © {year} Вадим Белинович
                     </p>
                     <div className={'flex items-center opacity-container gap-8 text-secondary'}>
                         <Link
