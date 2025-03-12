@@ -16,13 +16,27 @@ export default function Thumbnail() {
         project = portfolio.find((p: Project) => p.slug === pathname);
     }
     return (
-        <div className="h-[250px] md:h-[500px] mb-10 overflow-hidden rounded-lg relative">
-            <Image
-                src={category === "blog" ? post?.thumbnail : project?.image}
-                alt={category === "blog" ? post?.title : project?.name}
-                className="object-cover"
-                fill
-                sizes="100vh"/>
+        <div className="h-[250px] md:h-[500px] mb-10 overflow-hidden rounded-lg relative flex place-items-center">
+            {
+                category === "blog"
+                && post
+                && <Image
+                    src={post.thumbnail}
+                    alt={post.title}
+                    className="object-cover !relative"
+                    fill
+                    sizes="100vh"/>
+            }
+            {
+                category === "portfolio"
+                && project
+                && <Image
+                    src={project.image}
+                    alt={project.name}
+                    className="object-cover !relative"
+                    sizes="100vh"
+                    fill/>
+            }
         </div>
     );
 }
