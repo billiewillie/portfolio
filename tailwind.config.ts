@@ -54,11 +54,14 @@ export default {
                                 color: 'var(--text-secondary)'
                             }
                         },
+                        strong: {
+                            color: 'var(--text-primary)',
+                        },
                         'h1, h2, h3, h4, h5, h6': {
                             color: 'var(--text-primary)'
                         },
                         'p, li': {
-                            color: 'var(--text-secondary)'
+                            color: 'var(--text-primary)'
                         }
                     },
 
