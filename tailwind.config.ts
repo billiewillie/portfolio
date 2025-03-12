@@ -50,6 +50,7 @@ export default {
                         color: 'var(--text-primary)',
                         a: {
                             color: 'var(--text-primary)',
+                            textUnderlineOffset: '4px',
                             '&:hover': {
                                 color: 'var(--text-secondary)'
                             }
