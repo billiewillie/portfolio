@@ -2,7 +2,13 @@ import SyntaxHighlighter from "@/components/SyntaxHighlighter";
 import Thumbnail from "@/components/Thumbnail";
 import {ReactNode} from "react";
 
-export default function MdxLayout({children}: { children: ReactNode }) {
+export default function MdxLayout(
+    {
+        children,
+    }: {
+        children: ReactNode,
+    }
+) {
 
     return (
         <div className='mb-12'>

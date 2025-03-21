@@ -47,5 +47,15 @@ export const portfolio: Project[] = [
         year: 2024,
         slug: 'labvision',
         typeOfWork: 'Разработка сайта и дизайн'
-    }
+    },
+    {
+        name: 'Bureau21',
+        image: '/projects/bureau21.jpg',
+        link: '/portfolio/bureau21',
+        bgColor: '#ffffff',
+        bgCover: false,
+        year: 2020,
+        slug: 'bureau21',
+        typeOfWork: 'Разработка сайта и дизайн'
+    },
 ];
