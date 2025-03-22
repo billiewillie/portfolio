@@ -8,10 +8,10 @@ export type Post = {
 
 export const posts: Post[] = [
     {
-        title: "Abc Efg",
-        slug: "abc-efg",
-        date: "2024-02-28",
-        category: "Blockchain",
-        thumbnail: "/app.jpg",
+        title: "this в JavaScript",
+        slug: "this-v-javascript",
+        date: "2025-03-22",
+        category: "JavaScript",
+        thumbnail: "/blog/this.webp",
     },
 ];

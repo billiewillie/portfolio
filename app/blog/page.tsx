@@ -16,6 +16,7 @@ export default function BlogPage() {
                             <div
                                 className="h-60 w-full relative overflow-hidden rounded-md object-cover group-hover:scale-105 duration-300 transition-all">
                                 <Image
+                                    className="object-cover"
                                     src={p.thumbnail}
                                     alt={`${p.title} - thumbnail`}
                                     sizes="100vh"
@@ -31,11 +32,6 @@ export default function BlogPage() {
                             <h2 className="text-2xl leading-7 font-bold py-1 line-clamp-2">
                                 {p.title}
                             </h2>
-
-                            {/* author and date */}
-                            <div className="text-gray-500 flex text-base space-x-10 py-3">
-                                <div>{p.date}</div>
-                            </div>
                         </TransitionLink>
                     ))}
                 </div>
