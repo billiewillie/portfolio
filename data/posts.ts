@@ -14,4 +14,11 @@ export const posts: Post[] = [
         category: "JavaScript",
         thumbnail: "/blog/this.webp",
     },
+    {
+        title: "Всплытие и погружение",
+        slug: "vsplytie-i-pogruzhenie",
+        date: "2025-03-23",
+        category: "JavaScript",
+        thumbnail: "/blog/vsplytie.webp",
+    },
 ];
