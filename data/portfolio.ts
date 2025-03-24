@@ -58,4 +58,14 @@ export const portfolio: Project[] = [
         slug: 'bureau21',
         typeOfWork: 'Разработка сайта и дизайн'
     },
+    {
+        name: 'Английская 70',
+        image: '/projects/anglyiskaja-70.webp',
+        link: '/portfolio/anglyiskaja-70',
+        bgColor: '#ffffff',
+        bgCover: true,
+        year: 2020,
+        slug: 'anglyiskaja-70',
+        typeOfWork: 'Разработка сайта и дизайн'
+    },
 ];
