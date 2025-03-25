@@ -5,12 +5,12 @@ import TransitionLink from "@/components/ui/TransitionLink";
 export default function BlogPage() {
     return (
         <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-3 place-items-center gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-stretch gap-5">
                 {posts.map((p, idx) => (
                     <TransitionLink
                         key={idx}
                         href={`/blog/${p.slug}`}
-                        className="p-4 group rounded-lg border w-[392px] border-gray-200 dark:border-gray-700">
+                        className="p-4 group rounded-lg border border-gray-200 dark:border-gray-700 w-full">
                         {/* image */}
                         <div
                             className="h-60 w-full relative overflow-hidden rounded-md object-cover group-hover:scale-105 duration-300 transition-all">
