@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
     title: 'Web-разработчик Вадим Белинович',
-    description: 'Персональный сайт web-разработчика Вадима Белиновича'
+    description: 'Персональный сайт web-разработчика Вадима Белиновича',
 }
 
 export default function RootLayout(
