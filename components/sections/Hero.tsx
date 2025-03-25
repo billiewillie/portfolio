@@ -19,8 +19,8 @@ export default function Hero() {
 						<Image
 							src="/me.webp"
 							priority={true}
-							width={406}
-							height={541}
+							width={384}
+							height={554}
 							className="transition duration-300 hover:scale-[1.015]"
 							alt="Вадим Белинович" />
 					</div>
