@@ -15,6 +15,16 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
     title: 'Web-разработчик Вадим Белинович',
     description: 'Персональный сайт web-разработчика Вадима Белиновича',
+    openGraph: {
+        images: [
+            '/opengraph-image.jpg'
+        ],
+    },
+    twitter: {
+        images: [
+            '/twitter-image.jpg'
+        ]
+    }
 }
 
 export default function RootLayout(
