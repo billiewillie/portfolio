@@ -53,7 +53,7 @@ export default function Experience() {
     }, [])
 
     return (
-        <section className="mb-32">
+        <section>
             <div className="container flex flex-col gap-8 md:flex-row sm:gap-x-16">
                 <div className={'flex flex-col md:basis-1/2 items-start gap-4'}>
                     <AccentTitle title={'Моя специализация'}/>
