@@ -75,9 +75,9 @@ export default function Experience() {
                                                     width={40}
                                                     height={40}/>
                                             </div>
-                                            <div className="flex flex-col gap-y-1 items-start flex-auto">
+                                            <div className="flex flex-col gap-y-2 items-start flex-auto">
                                                 <h3 className='leading-none'>Веб разработчик</h3>
-                                                <div className={'flex justify-between w-full'}>
+                                                <div className={'flex justify-between w-full leading-none items-end'}>
                                                     <Link
                                                         className={'text-secondary underline-offset-4 hover:underline'}
                                                         href={company.link}
