@@ -21,4 +21,11 @@ export const posts: Post[] = [
         category: "JavaScript",
         thumbnail: "/blog/vsplytie.webp",
     },
+    {
+        title: "Event loop",
+        slug: "event-loop",
+        date: "2025-03-25",
+        category: "JavaScript",
+        thumbnail: "/blog/event-loop.webp",
+    },
 ];
