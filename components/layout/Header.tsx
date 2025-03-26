@@ -26,7 +26,7 @@ export default function Header() {
 
     return (
         <header
-            className={`flex sticky transition-all duration-1000 top-0 left-0 right-0 z-50 w-full px-0 pt-4 mb-12 ${isLoaded ? 'translate-y-0' : '-translate-y-16'}`}>
+            className={`flex sticky transition-all duration-1000 top-0 left-0 right-0 z-50 w-full px-0 pt-4 mb-8 xl:mb-12 ${isLoaded ? 'translate-y-0' : '-translate-y-16'}`}>
             <div className="container relative flex justify-center h-[28px]">
                 <motion.nav
                     ref={ref}
@@ -36,7 +36,7 @@ export default function Header() {
                         maxWidth: `${isScrolled ? '50%' : '100%'}`,
                         backdropFilter: `${isScrolled ? 'blur(12px)' : 'blur(0px)'}`,
                     }}
-                    className="flex w-full h-[42px] items-center justify-between rounded-full transition-all duration-500 px-4 md:px-8 lg:bg-backdrop">
+                    className="flex w-full h-[28px] items-center justify-between rounded-full transition-all duration-500 px-4 md:px-8 lg:bg-backdrop">
                     <Logo />
                     <Navigation />
                 </motion.nav>

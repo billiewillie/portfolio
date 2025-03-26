@@ -17,7 +17,7 @@ export default function Template({children}: { children: ReactNode }) {
             className='revealFx hideRevealFx'>
             <div
                 id='mainInner'
-                className='relative flex w-full flex-col min-h-[100dvh] mb-16 xl:mb-32 leaveFx hideLeaveFx'>
+                className='relative flex w-full flex-col min-h-[100dvh] mb-16 xl:mb-32   leaveFx hideLeaveFx'>
                 {children}
             </div>
         </main>

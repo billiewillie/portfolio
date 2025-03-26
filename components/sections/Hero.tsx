@@ -21,7 +21,7 @@ export default function Hero() {
 							priority={true}
 							width={384}
 							height={554}
-							className="transition duration-300 hover:scale-[1.015]"
+							className="transition duration-300 hover:scale-[1.015] h-[440px] xl:h-auto w-full object-cover object-center"
 							alt="Вадим Белинович" />
 					</div>
 				</div>
@@ -46,8 +46,8 @@ export default function Hero() {
 						className={'w-1 inline-flex'} /> Web&#8209;дизайнер
 					</h1>
 					<p className={'text-balance text-base text-secondary mb-8'}>
-						Я сотрудничаю с компаниями по всему миру, создавая привлекательные и многофункциональные приложения, которые
-						способствуют достижению результатов и целей бизнеса.
+						Я сотрудничаю с компаниями по всему миру, создавая привлекательные и многофункциональные приложения, которые
+						способствуют достижению результатов и целей бизнеса.
 					</p>
 					<Link
 						href="/Белинович%20Вадим%20Игоревич.pdf"
