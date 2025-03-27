@@ -68,4 +68,14 @@ export const portfolio: Project[] = [
         slug: 'anglyiskaja-70',
         typeOfWork: 'Разработка сайта и дизайн'
     },
+    {
+        name: 'Spb panorama',
+        image: '/projects/spb-panorama.webp',
+        link: '/portfolio/spb-panorama',
+        bgColor: '#ffffff',
+        bgCover: false,
+        year: 2021,
+        slug: 'spb-panorama',
+        typeOfWork: 'Разработка сайта и дизайн'
+    },
 ];
